@@ -1,0 +1,26 @@
+.banner-container {
+    padding-top: 12vh;
+    background: url(../../assets/png1.png);
+    display: block;
+    width: 100%;
+    max-width: 2000px;
+    height: 88vh;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.banner-content {
+    padding: 5px;
+    color: #000;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+.banner-content p {
+    font-size: 6rem;
+    font-family: 'GolosText-Bold', sans-serif;
+    word-wrap: break-word;
+}
+  

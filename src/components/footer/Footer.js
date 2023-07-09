@@ -26,9 +26,16 @@ function Footer() {
         <div className='contacts'>
             <h3>Связь с нами</h3>
             <p>
-                Адрес: <a href={'https://yandex.ru/maps/-/CCUDB-tEpD'} target="_blank" rel="noopener noreferrer">Москва, Волоколамское шоссе 4, корпус 6, 3 этаж, комната 8 (Приемная комиссия)</a>
+                Адрес:<br/>
+                <a href={'https://yandex.ru/maps/-/CCUDB-tEpD'} target="_blank" rel="noopener noreferrer">Москва, Волоколамское шоссе 4, корпус 6, 3 этаж, комната 8 (Приемная комиссия)</a>
             </p>
-            <p>Номер телефона: <a href={'tel:+74952151789'} target="_blank" rel="noopener noreferrer">+7&nbsp;(495)&nbsp;215&nbsp;17&nbsp;89</a></p>
+            <p>
+            <a href={'https://yandex.ru/maps/-/CCUDB-tEpD'} target="_blank" rel="noopener noreferrer">Москва, Волоколамское шоссе 4, корпус 6, 6 этаж, комната 607 (Дирекция Института №8)</a>
+            </p>
+            <p>Номер телефона:<br/> 
+                <a href={'tel:+74952151789'} target="_blank" rel="noopener noreferrer">+7&nbsp;(495)&nbsp;215&nbsp;17&nbsp;89 (Приемная комиссия)</a></p>
+            <p><a href={'tel:+74952151789'} target="_blank" rel="noopener noreferrer">+7&nbsp;(495)&nbsp;215&nbsp;17&nbsp;89 (Дирекция Института №8)</a></p>
+
         </div>
         <div className="legal-info">
           <p>© 2023 ИТ-центр МАИ (Московский авиационный институт). Все права защищены</p>

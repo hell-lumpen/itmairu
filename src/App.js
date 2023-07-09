@@ -2,17 +2,14 @@ import React from 'react';
 import './App.scss';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-import img from '../src/assets/png.png'
+import Banner from './components/banner/Banner';
 
 function App() {
   return (
     <div className='App'>
       <Header />
-      <div class="image-container">
-              <img src={img} alt="Image description" />
-            </div>
+        <Banner/>
         <div className="container">
-          <h1>ИНСТИТУТ №8 — ЭТО IT</h1>
             <h2>О нас</h2>
               <p>Факультет компьютерных наук и прикладной математики является одним из ведущих образовательных и научных центров в области компьютерных наук и прикладной математики. Мы предлагаем высококачественное образование, активно занимаемся научной деятельностью и подготавливаем квалифицированных специалистов, готовых к вызовам современного информационного общества.</p>
 

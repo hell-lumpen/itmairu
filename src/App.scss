@@ -36,6 +36,44 @@
   font-style: normal;
 }
 
+/* Скрытие стандартного скролл-бара */
+body::-webkit-scrollbar {
+  width: 12px; /* Ширина скролл-бара */
+}
+
+/* Стилизация скролл-бара */
+body::-webkit-scrollbar-track {
+  background-color: #1E1E1E; /* Цвет трека */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #636583; /* Цвет ползунка */
+  border-radius: 6px; /* Радиус закругления ползунка */
+}
+
+/* Изменение внешнего вида при наведении на ползунок */
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #d08927; /* Цвет ползунка при наведении */
+}
+
+/* Стилизация скролл-бара в горизонтальном режиме */
+body::-webkit-scrollbar-horizontal {
+  height: 12px; /* Высота скролл-бара в горизонтальном режиме */
+}
+
+body::-webkit-scrollbar-thumb:horizontal {
+  background-color: #636583; /* Цвет ползунка в горизонтальном режиме */
+}
+
+/* Стилизация скролл-бара в вертикальном режиме */
+body::-webkit-scrollbar-vertical {
+  width: 12px; /* Ширина скролл-бара в вертикальном режиме */
+}
+
+body::-webkit-scrollbar-thumb:vertical {
+  background-color: #636583; /* Цвет ползунка в вертикальном режиме */
+}
+
 h1 {
   font-family: 'GolosText-Black', sans-serif;
   margin-top: 2vh;
@@ -97,7 +135,6 @@ body {
 }
 
 .container {
-  padding-top: 80px;
   width: 100%;
   max-width: 1200px; /* Задайте желаемую максимальную ширину контента */
   margin: 0 auto;
