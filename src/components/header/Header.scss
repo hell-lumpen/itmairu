@@ -27,6 +27,7 @@
   .logo img {
     max-height: 45px;
   }
+
   .logo {
     margin: 10px;
     margin-left: 15px;
@@ -66,6 +67,7 @@
     display: block;
     padding: 10px;
     cursor: pointer;
+    transition: opacity 0.8s ease; /* Добавлено свойство transition для плавного перехода */
   }
 
   .menu-icon img {
@@ -82,10 +84,14 @@
     background-color: $background-color-header-footer;
     display: none;
     padding: 20px;
+    opacity: 0; /* Добавлено свойство opacity для плавного перехода */
+    transition: opacity 0.8s ease; /* Добавлено свойство transition для плавного перехода */
   }
 
   .nav.open {
     display: block;
+    opacity: 1; /* Добавлено свойство opacity для плавного перехода */
+    overflow-y: auto; 
   }
 
   .nav ul {

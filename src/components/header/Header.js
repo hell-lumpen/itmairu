@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Header.scss';
 import logo from '../../assets/logo.png';
 import menuIcon from '../../assets/menuw.png';
@@ -10,11 +10,20 @@ function Header() {
     setMenuOpen(!isMenuOpen);
   };
 
+  useEffect(() => {
+    const body = document.body;
+    if (isMenuOpen) {
+      body.style.overflow = 'hidden'; // Запретить прокрутку
+    } else {
+      body.style.overflow = 'auto'; // Разрешить прокрутку
+    }
+  }, [isMenuOpen]);
+
   return (
     <header className="header">
       <div className="header_container">
         <div className="logo">
-          <img src={logo} alt="Логотип" />
+          <img src={logo} alt="IT-МАИ" />
         </div>
         <div className="menu-icon" onClick={handleMenuClick}>
           <img src={menuIcon} alt="Меню" />
