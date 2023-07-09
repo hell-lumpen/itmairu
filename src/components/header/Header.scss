@@ -1,51 +1,99 @@
 @import '../../_colors.scss';
 
 .header {
-    background-color: $background-color-header-footer;
-    width: 100%;
-    position: fixed;
-  }
+  background-color: $background-color-header-footer;
+  width: 100%;
+  position: fixed;
+}
 
-  .header_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1200px;
-    color: $text-color-header-footer;
-  }
-  
-  .logo img{
-    max-height: 10vh;
-  }
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  color: $text-color-header-footer;
+  position: relative;
+}
 
-  @media (max-width: 476px) {
-    .logo img{
-      max-height: 40px;
-    }
+.logo img {
+  max-height: 10vh;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    max-height: 45px;
   }
-  
-  .nav ul {
+  .logo {
+    margin: 10px;
+    margin-left: 15px;
+  }
+}
+
+.nav {
+  ul {
     list-style-type: none;
     display: flex;
   }
-  
-  .nav ul li {
+
+  ul li {
     margin-right: 20px;
   }
 
-  .nav ul li:hover {
+  ul li:hover {
     text-decoration: underline;
   }
-  
-  .nav ul li a {
+
+  ul li a {
     color: $text-color-header-footer;
     text-decoration: none;
   }
-  
-  .nav ul li a:hover {
+
+  ul li a:hover {
     text-decoration: underline;
-  }  
+  }
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .menu-icon img {
+    height: 30px;
+    width: auto;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 88vh;
+    right: 0;
+    background-color: $background-color-header-footer;
+    display: none;
+    padding: 20px;
+  }
+
+  .nav.open {
+    display: block;
+  }
+
+  .nav ul {
+    flex-direction: column;
+  }
+
+  .nav ul li {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
