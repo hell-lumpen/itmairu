@@ -1,0 +1,103 @@
+@import '../src/_colors.scss';
+
+@font-face {
+  font-family: 'GolosText-Black';
+  src:
+    url('../fonts/golos-text_black.woff2') format('woff2'),
+    url('../fonts/golos-text_black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GolosText-Bold';
+  src:
+    url('../fonts/golos-text_bold.woff2') format('woff2'),
+    url('../fonts/golos-text_bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GolosText-Medium';
+  src:
+    url('../fonts/golos-text_medium.woff2') format('woff2'),
+    url('../fonts/golos-text_medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GolosText-Regular';
+  src:
+    url('../fonts/golos-text_regular.woff2') format('woff2'),
+    url('../fonts/golos-text_regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'GolosText-Black', sans-serif;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  font-size: 3rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: $text-color;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'GolosText-Bold', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  margin-top: 1.5vh;
+  margin-bottom: 1vh;
+  font-size: 2.2rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Текст */
+p,
+span,
+div {
+  font-family: 'GolosText-Regular', sans-serif;
+  color: $text-color;
+  font-size: 1.6rem;
+  word-wrap: break-word;
+}
+
+p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container a {
+  text-decoration: none;
+  color: $accent-color;
+  font-family: 'GolosText-Regular', sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem; /* Размер шрифта для ссылок */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* Задайте желаемую максимальную ширину контента */
+  margin: 0 auto;
+}

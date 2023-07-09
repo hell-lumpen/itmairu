@@ -1,0 +1,106 @@
+@import '../../_colors.scss';
+
+.footer {
+  background-color: $background-color-header-footer;
+}
+
+.footer_container {
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  color: $text-color-header-footer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Стили для секций в футере */
+.sitemap,
+.social,
+.contacts {
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+  color: $text-color-header-footer;
+}
+
+.sitemap h3,
+.social h3,
+.contacts h3 {
+  font-size: 18px;
+  color: $text-color-header-footer;
+  padding: 0;
+}
+
+.sitemap ul,
+.social ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sitemap ul li,
+.social ul li {
+  color: $text-color-header-footer;
+  margin-bottom: 5px;
+}
+
+.sitemap ul li:hover,
+.social ul li:hover {
+  text-decoration: underline;
+  color: #c5c5c5;
+
+}
+
+.sitemap ul li a,
+.social ul li a {
+  color: $text-color-header-footer;
+  text-decoration: none;
+}
+
+.sitemap ul li a:hover,
+.social ul li a:hover {
+  text-decoration: underline;
+  color: #c5c5c5;
+}
+
+.legal-info {
+  margin: 0 auto;
+}
+
+.legal-info p {
+  color: $text-color-header-footer;
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+footer a {
+  color: $text-color-header-footer;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #c5c5c5;
+}
+
+.contacts p {
+  padding: 0;
+  color: $text-color-header-footer;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  .footer_container {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .sitemap,
+  .social,
+  .contacts {
+    width: 100%;
+  }
+}
