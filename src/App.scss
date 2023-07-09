@@ -40,7 +40,7 @@ h1 {
   font-family: 'GolosText-Black', sans-serif;
   margin-top: 2vh;
   margin-bottom: 2vh;
-  font-size: 3rem;
+  font-size: 5rem;
   padding-left: 10px;
   padding-right: 10px;
   color: $text-color;
@@ -67,7 +67,7 @@ span,
 div {
   font-family: 'GolosText-Regular', sans-serif;
   color: $text-color;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   word-wrap: break-word;
 }
 
@@ -81,7 +81,7 @@ p {
   color: $accent-color;
   font-family: 'GolosText-Regular', sans-serif;
   font-weight: bold;
-  font-size: 1.6rem; /* Размер шрифта для ссылок */
+  font-size: 1.3rem; /* Размер шрифта для ссылок */
 }
 
 a:hover {
@@ -97,7 +97,23 @@ body {
 }
 
 .container {
+  padding-top: 80px;
   width: 100%;
   max-width: 1200px; /* Задайте желаемую максимальную ширину контента */
   margin: 0 auto;
+}
+
+.image-container {
+  margin: 0 auto;
+  max-width: 1900px; /* Ширина контейнера */
+  height: auto; /* Высота контейнера, автоматически определяется в зависимости от соотношения сторон изображения */
+  border-radius: 10px; /* Скругление углов контейнера */
+  overflow: hidden; /* Обрезание изображения, выходящего за границы контейнера */
+}
+
+.image-container img {
+  display: block; /* Убирает пробелы под изображением */
+  width: 100%; /* Ширина изображения, чтобы оно занимало всю ширину контейнера */
+  height: 100vh; /* Высота изображения, автоматически определяется в зависимости от соотношения сторон */
+  object-fit: cover;
 }

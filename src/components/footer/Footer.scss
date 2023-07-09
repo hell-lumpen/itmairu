@@ -21,6 +21,7 @@
 .contacts {
   width: calc(33.33% - 10px);
   margin-bottom: 20px;
+  font-size: 1.6rem;
   color: $text-color-header-footer;
 }
 
@@ -42,6 +43,7 @@
 .social ul li {
   color: $text-color-header-footer;
   margin-bottom: 5px;
+  font-size: 1.6rem;
 }
 
 .sitemap ul li:hover,
@@ -77,6 +79,7 @@
 footer a {
   color: $text-color-header-footer;
   text-decoration: none;
+  font-size: 1.6rem;
 }
 
 footer a:hover {
@@ -87,6 +90,7 @@ footer a:hover {
 .contacts p {
   padding: 0;
   color: $text-color-header-footer;
+  font-size: 1.6rem;
 }
 
 /* Адаптивные стили */
