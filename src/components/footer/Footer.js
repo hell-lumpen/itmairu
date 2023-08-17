@@ -13,6 +13,7 @@ function Footer() {
             <li>Магистратура</li>
             <li>Мероприятия</li>
             <li>Приемная комиссия</li>
+            <li>Контакты</li>
           </ul>
         </div>
         <div className="social">
